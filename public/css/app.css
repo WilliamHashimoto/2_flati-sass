@@ -6322,6 +6322,87 @@ readers do not read off random characters that represent icons */
     margin-bottom: 40px;
   }
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header .title {
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .header .listNav {
+    justify-content: center;
+    padding: 0;
+  }
+  .header .listNav li a {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .divCards {
+    flex-direction: column;
+  }
+
+  .section2bottom {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 !important;
+  }
+  .section2bottom .bottomL {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .section2bottom .bottomR {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 374px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+  }
+  .header .title {
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .header .listNav {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .header .listNav li a {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .divCards {
+    flex-direction: column;
+  }
+
+  .section2bottom {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 !important;
+  }
+  .section2bottom .bottomL {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .section2bottom .bottomR {
+    display: flex;
+    flex-direction: column;
+  }
+}
 body {
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
