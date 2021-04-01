@@ -6123,6 +6123,7 @@ readers do not read off random characters that represent icons */
   display: flex;
   justify-content: space-around;
   width: 100vw;
+  height: 70px;
 }
 .header .title {
   text-decoration: none;
@@ -6130,19 +6131,28 @@ readers do not read off random characters that represent icons */
   align-items: center;
 }
 .header .title h1 {
-  margin: 0;
+  margin: 5px;
   color: white;
+  font-weight: 400;
+}
+.header .listNav {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
 }
 .header .listNav li {
   list-style-type: none;
   margin: 0;
   display: inline;
+  padding-bottom: 20px;
 }
 .header .listNav li a {
   color: #ffffff65;
   font-weight: 200;
-  margin: 10px;
-  padding: 10px;
+  font-size: 15px;
+  margin: 10px 15px;
+  padding: 10px 10px;
+  text-decoration: none;
 }
 .header .listNav li a:hover {
   color: white;
@@ -6158,6 +6168,160 @@ readers do not read off random characters that represent icons */
   height: 300px;
 }
 
+.section1 {
+  background-color: #f8f8ec;
+  padding: 30px 15%;
+  color: gray;
+}
+.section1 .p2 {
+  font-size: 30px;
+  margin: 0;
+}
+.section1 .p2 .span1 {
+  background-color: #26a2cc;
+  color: white;
+}
+.section1 .p2 .span2 {
+  color: #26a2cc;
+}
+.section1 .p2 .span3 {
+  font-weight: bolder;
+}
+.section1 h2 {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.section2 {
+  background-color: #efeff1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section2 .divCards {
+  display: flex;
+  justify-content: space-between;
+  color: #00000065;
+  width: 80%;
+  margin: 0 auto;
+}
+.section2 .divCards .card {
+  background-color: #e2e0e0;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.section2 .divCards .card i {
+  color: blue;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+.section2 .divCards .card h4 {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.section2 .divCards .card p {
+  font-size: 13px;
+}
+.section2 .divCards .card .build {
+  color: #26a2cc;
+  margin-top: 0;
+}
+.section2 .section2bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 60px;
+  color: #00000065;
+}
+.section2 .section2bottom .bottomL {
+  width: 30%;
+  text-align: left;
+}
+.section2 .section2bottom .bottomL p {
+  font-size: 13px;
+}
+.section2 .section2bottom .bottomL button {
+  background-color: #26a2cc;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 10px;
+}
+.section2 .section2bottom .bottomR {
+  color: #ffffff86;
+  display: flex;
+}
+.section2 .section2bottom .bottomR .card2 {
+  background-color: #38485f;
+  margin: 2px;
+  width: 200px;
+  border-radius: 0 0 5px 5px;
+}
+.section2 .section2bottom .bottomR .card2 img {
+  width: 100%;
+}
+.section2 .section2bottom .bottomR .card2 h3 {
+  color: white;
+}
+.section2 .section2bottom .bottomR .card2 p {
+  font-size: 13px;
+}
+
+.footerTop {
+  background-color: #4586cc;
+  color: #ffffff86;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerTop h2 {
+  font-weight: 200;
+  letter-spacing: 5px;
+}
+.footerTop p {
+  width: 50%;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 30px;
+}
+.footerTop .reseaux i {
+  margin: 10px;
+  opacity: 0.3;
+}
+
+.footerBottom {
+  background-color: #363b47;
+  margin: 0;
+  padding: 15px;
+}
+.footerBottom p {
+  margin: 0;
+  color: #ffffff6b;
+  font-weight: 200;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .divCards {
+    flex-direction: column;
+  }
+
+  .section2bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section2bottom .bottomL {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
 body {
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
